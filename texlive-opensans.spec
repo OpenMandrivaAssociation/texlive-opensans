@@ -1,3 +1,9 @@
+# revision 23709
+# category Package
+# catalog-ctan /fonts/opensans
+# catalog-date 2011-08-23 11:14:06 +0200
+# catalog-license lppl1.3
+# catalog-version 1.0
 Name:		texlive-opensans
 Version:	1.0
 Release:	1
@@ -864,6 +870,7 @@ support with dvips.
 %doc %{_texmfdistdir}/source/fonts/opensans/opensans-map.tex
 %doc %{_texmfdistdir}/source/fonts/opensans/opensans-osfigures.etx
 %doc %{_texmfdistdir}/source/fonts/opensans/ttf2type1.pe
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -874,3 +881,5 @@ support with dvips.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
