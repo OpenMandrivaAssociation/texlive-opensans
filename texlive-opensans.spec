@@ -1,11 +1,11 @@
-# revision 23709
+# revision 24490
 # category Package
 # catalog-ctan /fonts/opensans
-# catalog-date 2011-08-23 11:14:06 +0200
+# catalog-date 2011-11-03 09:19:42 +0100
 # catalog-license lppl1.3
-# catalog-version 1.0
+# catalog-version 1.1
 Name:		texlive-opensans
-Version:	1.0
+Version:	1.1
 Release:	1
 Summary:	The Open Sans font family, and LaTeX support
 Group:		Publishing
@@ -851,6 +851,7 @@ support with dvips.
 %{_texmfdistdir}/tex/latex/opensans/ts1fosj.fd
 %{_texmfdistdir}/tex/latex/opensans/x2fos.fd
 %{_texmfdistdir}/tex/latex/opensans/x2fosj.fd
+%doc %{_texmfdistdir}/doc/fonts/opensans/CHANGES
 %doc %{_texmfdistdir}/doc/fonts/opensans/README
 %doc %{_texmfdistdir}/doc/fonts/opensans/manifest.txt
 %doc %{_texmfdistdir}/doc/fonts/opensans/opensans-samples.pdf
