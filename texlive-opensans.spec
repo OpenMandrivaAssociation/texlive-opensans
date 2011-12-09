@@ -1,11 +1,11 @@
-# revision 24490
+# revision 24706
 # category Package
 # catalog-ctan /fonts/opensans
-# catalog-date 2011-11-03 09:19:42 +0100
+# catalog-date 2011-11-30 18:37:09 +0100
 # catalog-license lppl1.3
-# catalog-version 1.1
+# catalog-version 1.2
 Name:		texlive-opensans
-Version:	1.1
+Version:	1.2
 Release:	1
 Summary:	The Open Sans font family, and LaTeX support
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 Open Sans is a humanist sans serif typeface designed by Steve
@@ -32,19 +29,19 @@ LaTeX. It includes the original TrueType fonts, as well as Type
 support with dvips.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
