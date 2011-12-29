@@ -28,16 +28,8 @@ LaTeX. It includes the original TrueType fonts, as well as Type
 1 versions, converted for this package using FontForge for full
 support with dvips.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -869,7 +861,6 @@ support with dvips.
 %doc %{_texmfdistdir}/source/fonts/opensans/opensans-map.tex
 %doc %{_texmfdistdir}/source/fonts/opensans/opensans-osfigures.etx
 %doc %{_texmfdistdir}/source/fonts/opensans/ttf2type1.pe
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -880,5 +871,3 @@ support with dvips.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
