@@ -871,3 +871,25 @@ support with dvips.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2-2
++ Revision: 754552
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2-1
++ Revision: 739865
+- texlive-opensans
+
+* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
++ Revision: 729690
+- texlive-opensans
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
++ Revision: 719165
+- texlive-opensans
+- texlive-opensans
+- texlive-opensans
+- texlive-opensans
+
