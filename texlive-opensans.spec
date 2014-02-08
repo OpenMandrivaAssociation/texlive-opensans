@@ -6,7 +6,7 @@
 # catalog-version 1.2
 Name:		texlive-opensans
 Version:	1.2
-Release:	2
+Release:	3
 Summary:	The Open Sans font family, and LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/opensans
