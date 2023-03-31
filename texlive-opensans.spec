@@ -1,6 +1,6 @@
 Name:		texlive-opensans
 Version:	54512
-Release:	1
+Release:	2
 Summary:	The Open Sans font family, and LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/opensans
