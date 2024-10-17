@@ -3,7 +3,7 @@ Version:	54512
 Release:	2
 Summary:	The Open Sans font family, and LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/opensans
+URL:		https://www.ctan.org/tex-archive/fonts/opensans
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/opensans.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/opensans.doc.r%{version}.tar.xz
